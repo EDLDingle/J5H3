@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <center>
+
+        <h2>Delicious Restaurant</h2>
+        <p>Place Your Order</p>
+      
+      </center>
+      
+      <script>
+      
+      const person = {
+        NUGGET: 8.5,
+        BURGER: 6,
+        COKE: 2,
+        };
+      var qty;
+      function light(w) {
+          
+      
+          if (w==1) {
+          qty=1;
+          }
+      
+          else if (w==2) {
+          qty=2;
+          }
+      
+          else if (w==3) {
+          qty=3;
+          }
+      
+          else {
+          qty=0;
+          }
+      
+          document.getElementById("demo").innerHTML = person.NUGGET*qty;
+          document.getElementById("demo1").innerHTML = qty;
+          }
+      
+      
+      </script>
+      
+      
+      <center>
+      
+      <table border="1" width="400">
+      <tr>
+      <td align="center"><button type="button" onclick="light(1)">ONE</button><br>
+        <button type="button" onclick="light(2)">TWO</button><br>
+        <button type="button" onclick="light(3)">THREE</button><br>
+        <button type="button" onclick="light(4)">Clear</button></td><td align="center"><img src="nuggets.png" width="100"><br></nt>$8.50 - Nuggets</td><td>quantity<br><div id="demo1"></div><br>Subtotal<div id="demo"></div></td>
+      </tr>
+      
+      
+      </table>
+      
+      <script>
+        
+        
+        
+        function typea(w) {
+        
+            if (w==1) {
+            qty=1;
+            }
+        
+            else if (w==2) {
+            qty=2;
+            }
+        
+            else if (w==3) {
+            qty=3;
+            }
+        
+            else {
+            qty=0;
+            }
+        
+            document.getElementById("demo2").innerHTML = person.BURGER*qty;
+            document.getElementById("demo3").innerHTML = qty;
+            }
+        
+          </script>
+        
+        
+        
+        <center>
+        
+        <table border="1" width="400">
+        <tr>
+        <td align="center"><button type="button" onclick="typea(1)">ONE</button><br>
+          <button type="button" onclick="typea(2)">TWO</button><br>
+          <button type="button" onclick="typea(3)">THREE</button><br>
+          <button type="button" onclick="typea(4)">Clear</button></td><td align="center"><img src="big-mac.png" width="100"><br>$6.00 - Burger</td><td>quantity<br><div id="demo3"></div><br>Subtotal<div id="demo2"></div></td>
+        </tr>
+        
+        
+        </table>
+    
+        <script>
+          function typeb(w) {
+            if (w==1) {
+              qty=1;
+            }
+            else if (w==2) {
+              qty=2;
+            }
+    
+            else if (w==3) {
+              qty=3;
+            }
+    
+            else {
+              qty=0;
+            }
+    
+    
+            document.getElementById("demo4").innerHTML=person.COKE*qty;
+            document.getElementById("demo5").innerHTML=qty;
+          }
+        </script>
+    
+        <table border="1" width="400">
+          <tr><td align="center">
+            <button type="button" onclick="typeb(1)">ONE</button><br>
+            <button type="button" onclick="typeb(2)">TWO</button><br>
+            <button type="button" onclick="typeb(3)">THREE</button><br>
+            <button type="button" onclick="typeb(4)">Clear</button>
+          </td>
+    
+          <td align="center"><img src="coke.png" width="100"><br>$2.00-Coke</td>
+          <td>quantity<br><div id="demo5"></div><br>Subtotal<br><div id="demo4"></div></td></tr>
+          <tr><td align="center">Total:</td><td colspan="2"></td>
+        </table>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
